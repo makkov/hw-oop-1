@@ -31,9 +31,13 @@ public class Main {
         Gryffindor hermioneGranger = new Gryffindor("Hermoine Granger", 85, 55, 68, 70, 30);
 
         Slytherin dracoMalfoy = new Slytherin("Draco Malfoy", 85, 85, 90, 70, 90, 80, 100);
+        Slytherin gregoryGoyle = new Slytherin("Gregory Goyle", 50, 50, 50, 80, 50, 50, 50);
 
 
         hermioneGranger.compare(dracoMalfoy);
+
         hermioneGranger.compare(harryPotter);
+
+        dracoMalfoy.compare(gregoryGoyle);
     }
 }

@@ -26,4 +26,9 @@ public class Hufflepuff extends Hogwarts {
     public int calculateSpecificScore() {
         return this.diligence + this.loyalty + this.honor;
     }
+
+    @Override
+    public void printCompareOfStudents(String betterStudentName, String otherStudentName) {
+        System.out.println(String.format("%s лучший пуфендуец чем %s", betterStudentName, otherStudentName));
+    }
 }

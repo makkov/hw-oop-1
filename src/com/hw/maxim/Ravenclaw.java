@@ -29,4 +29,9 @@ public class Ravenclaw extends Hogwarts {
     public int calculateSpecificScore() {
         return this.intelligence + this.wisdom + this.wit + this.creativity;
     }
+
+    @Override
+    public void printCompareOfStudents(String betterStudentName, String otherStudentName) {
+        System.out.println(String.format("%s лучший когтевранец чем %s", betterStudentName, otherStudentName));
+    }
 }

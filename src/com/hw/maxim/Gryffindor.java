@@ -26,4 +26,9 @@ public class Gryffindor extends Hogwarts {
     public int calculateSpecificScore() {
         return this.nobility + this.honor + this.courage;
     }
+
+    @Override
+    public void printCompareOfStudents(String betterStudentName, String otherStudentName) {
+        System.out.println(String.format("%s лучший гриффиндорец чем %s", betterStudentName, otherStudentName));
+    }
 }

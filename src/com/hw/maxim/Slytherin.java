@@ -32,4 +32,9 @@ public class Slytherin extends Hogwarts {
     public int calculateSpecificScore() {
         return this.cunning + this.determination + this.ambition + this.resourcefulness + this.lustForPower;
     }
+
+    @Override
+    public void printCompareOfStudents(String betterStudentName, String otherStudentName) {
+        System.out.println(String.format("%s лучший слизеринец чем %s", betterStudentName, otherStudentName));
+    }
 }

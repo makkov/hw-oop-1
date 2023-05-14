@@ -32,6 +32,8 @@ public abstract class Hogwarts {
 
     public abstract int calculateSpecificScore();
 
+    public abstract void printCompareOfStudents(String betterStudentName, String otherStudentName);
+
     public void compare(Hogwarts hogwarts) {
         if (this.getClass().equals(hogwarts.getClass())) {
             compareBySpecific(hogwarts);
@@ -44,9 +46,9 @@ public abstract class Hogwarts {
         int thisScore = this.calculateGeneralScore() + this.calculateSpecificScore();
         int otherScore = hogwarts.calculateGeneralScore() + hogwarts.calculateSpecificScore();
         if (thisScore > otherScore) {
-            System.out.println(String.format("%s сильнее чем %s", this.name, hogwarts.getName()));
+            printCompareOfStudents(this.getName(), hogwarts.getName());
         } else if (thisScore < otherScore) {
-            System.out.println(String.format("%s сильнее чем %s", hogwarts.getName(), this.name));
+            printCompareOfStudents(hogwarts.getName(), this.getName());
         } else {
             System.out.println("Волшебники равны по силе");
         }
